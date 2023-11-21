@@ -55,6 +55,7 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<finalName>docker-producer-demo</finalName>
 				</configuration>
 			</plugin>
 		</plugins>

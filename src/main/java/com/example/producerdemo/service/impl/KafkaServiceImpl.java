@@ -20,9 +20,9 @@ public class KafkaServiceImpl implements KafkaService {
 
     @Override
     public boolean testKafkaProducer(String value) {
-
-        kafkaTemplate.send(kafkaTopic,"producer test data - "+ Math.random());
-        log.info("message produced");
+        log.info("message produced started");
+        kafkaTemplate.send("test-app-topic","producer test data - "+ Math.random());
+        log.info("message produced finished");
 
         return true;
     }
