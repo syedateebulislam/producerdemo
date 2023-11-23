@@ -2,6 +2,8 @@ package com.example.producerdemo.service;
 
 public interface KafkaService {
 
-    boolean testKafkaProducer(String value);
+    boolean testKafkaProducer();
+
+    boolean testKafkaProducerWithData(String value);
 
 }
